@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: realizar consulta de saldo a cuenta diez por ciento" tests="12" skipped="2" failures="2" errors="0" timestamp="2021-10-11T21:29:38" hostname="DESKTOP-V9QR6M8" time="18.211">
+  <properties/>
+  <testcase name="Given el usuario se encuentra en el home para realizar una consulta de saldo" classname="Scenario: realizar consulta de saldo a cuenta diez por ciento" time="0.005"/>
+  <testcase name="When presiona el boton igresar del home para realizar una consulta de saldo" classname="Scenario: realizar consulta de saldo a cuenta diez por ciento" time="0.0"/>
+  <testcase name="And ingresa su rut para realizar una consulta de saldo" classname="Scenario: realizar consulta de saldo a cuenta diez por ciento" time="0.0"/>
+  <testcase name="And ingresa su clave para realizar una consulta de saldo" classname="Scenario: realizar consulta de saldo a cuenta diez por ciento" time="0.0"/>
+  <testcase name="And presiona el boton ingresar en el login para realizar una consulta de saldo" classname="Scenario: realizar consulta de saldo a cuenta diez por ciento" time="0.0"/>
+  <testcase name="And selecciona cuentas" classname="Scenario: realizar consulta de saldo a cuenta diez por ciento" time="0.0"/>
+  <testcase name="And selecciona cuentas vistas" classname="Scenario: realizar consulta de saldo a cuenta diez por ciento" time="0.0"/>
+  <testcase name="And selecciona saldos" classname="Scenario: realizar consulta de saldo a cuenta diez por ciento" time="0.0"/>
+  <testcase name="And selecciona cuenta vista diez por ciento" classname="Scenario: realizar consulta de saldo a cuenta diez por ciento" time="0.002">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#cta007064566169&quot;}&#10;  (Session info: chrome=94.0.4606.71)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-V9QR6M8', ip: '192.168.1.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Mario\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fa9cfa78c4c973bb3cbb88fa49751ae6&#10;*** Element info: {Using=css selector, value=#cta007064566169}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#cta007064566169&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-V9QR6M8', ip: '192.168.1.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Mario\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa9cfa78c4c973bb3cbb88fa49751ae6
+*** Element info: {Using=css selector, value=#cta007064566169}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at page.PrivatePage.setSeleccionarCuentaPersonal(PrivatePage.java:58)
+	at definitions.Steps.selecciona_cuenta_vista_diez_por_ciento(Steps.java:158)
+	at ✽.And selecciona cuenta vista diez por ciento(test.feature:42)
+</failure>
+  </testcase>
+  <testcase name="And presiona el boton aceptar" classname="Scenario: realizar consulta de saldo a cuenta diez por ciento" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then se debe visualizar el saldo de cuenta diez por ciento" classname="Scenario: realizar consulta de saldo a cuenta diez por ciento" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="classMethod" classname="Scenario: realizar consulta de saldo a cuenta diez por ciento" time="18.432">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#cta007064566169&quot;}&#10;  (Session info: chrome=94.0.4606.71)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-V9QR6M8', ip: '192.168.1.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Mario\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fa9cfa78c4c973bb3cbb88fa49751ae6&#10;*** Element info: {Using=css selector, value=#cta007064566169}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#cta007064566169&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-V9QR6M8', ip: '192.168.1.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Mario\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa9cfa78c4c973bb3cbb88fa49751ae6
+*** Element info: {Using=css selector, value=#cta007064566169}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at page.PrivatePage.setSeleccionarCuentaPersonal(PrivatePage.java:58)
+	at definitions.Steps.selecciona_cuenta_vista_diez_por_ciento(Steps.java:158)
+	at ✽.And selecciona cuenta vista diez por ciento(test.feature:42)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Usuario se encuentra en el Home
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
