@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Selecionar boton ingresar en el home" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-10-11T22:04:37" hostname="DESKTOP-V9QR6M8" time="6.599">
+  <properties/>
+  <testcase name="Given el usuario se encuentra en el home" classname="Scenario: Selecionar boton ingresar en el home" time="0.002"/>
+  <testcase name="When presiona el boton ingresar" classname="Scenario: Selecionar boton ingresar en el home" time="0.0"/>
+  <testcase name="Then se debe visualizar el titulo &quot;Ingresa a tu banco en línea&quot;" classname="Scenario: Selecionar boton ingresar en el home" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Selecionar boton ingresar en el home" time="6.818"/>
+  <system-out><![CDATA[el usuario se encuentra en el Home Page
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,9 +1,9 @@
 Feature: home banco santander
-
+  @Test01
   Scenario: Selecionar boton ingresar en el home
     Given el usuario se encuentra en el home
     When presiona el boton ingresar
-    Then se debe tener acceso al login del banco santander
+    Then se debe visualizar el titulo "Ingresa a tu banco en línea"
 
   Scenario: Validar que boton ingresar en el login este deshabilitado
     Given el usuario se encuentra en el home para validar boton ingresar en el login
@@ -29,7 +29,7 @@ Feature: home banco santander
     And ingresa su clave
     And presiona el boton ingresar en el login
     Then se debe ingresar al sitio privado del banco santander
-  @Test01
+
   Scenario: realizar consulta de saldo a cuenta diez por ciento
     Given el usuario se encuentra en el home para realizar una consulta de saldo
     When presiona el boton igresar del home para realizar una consulta de saldo

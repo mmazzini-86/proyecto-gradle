@@ -18,10 +18,9 @@ public class Steps {
         HomePage.setBtnIngresarHome();
         Thread.sleep(2000);
     }
-    @Then("^se debe tener acceso al login del banco santander$")
-    public void seDebeTenerAccesoAlLoginDelBancoSantander() throws InterruptedException {
-        HomePage.setTituloLogin();
-        Thread.sleep(2000);
+    @Then("se debe visualizar el titulo \"([^\"]*)\"$")
+    public void seDebeVisualizarElTitulo(String titulo) throws InterruptedException {
+        HomePage.setTituloLogin(titulo);
     }
     //Validar que boton ingresar en el login este deshabilitado
     @Given("^el usuario se encuentra en el home para validar boton ingresar en el login$")

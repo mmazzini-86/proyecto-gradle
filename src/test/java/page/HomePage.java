@@ -1,12 +1,13 @@
 package page;
 import org.junit.Assert;
 import utilities.*;
+import definitions.*;
 
 
 public class HomePage {
 
     public static String btnIngresarHome = "//*[@id='btnIngresar']";
-    public static String tituloLogin = "//*[@id='header']//h6[contains(text(),'Ingresa a tu banco')]";
+    //public static String tituloLogin = "//h6[contains(text(),'Ingresa a tu banco')]";
     public static String inputRut = "/html/body/div[2]/div/div/div/div[2]/div/div/form/div[1]/div/input[1]";
     public static String inputClave = "//input[@type='password']";
     public static String submitIngresar = "//button[@type='submit']";
@@ -18,8 +19,8 @@ public class HomePage {
         Utilities.esperarElementoWebBci(btnIngresarHome).click();
         Thread.sleep(2000);
     }
-    public static void setTituloLogin() throws InterruptedException {
-        Assert.assertTrue("", Utilities.esperarElementoWebBci(tituloLogin).isDisplayed());
+    public static void setTituloLogin(String valorActual) throws InterruptedException {
+        Assert.assertTrue("", Utilities.esperarElementoWebBci("//h6[contains(text(),'"+valorActual+"')]").isDisplayed());
         Thread.sleep(2000);
 
     }

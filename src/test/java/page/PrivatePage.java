@@ -17,7 +17,7 @@ public class PrivatePage {
     public static String cuentaPersonal = "/html/body/center/table[1]/tbody/tr/td/table/tbody/tr[3]/td/input";  //*[@id='cta007064566169']";
     public static String btnAceptar = "/html/body/center/table[1]/tbody/tr/td/table/tbody/tr[3]/td/input";
     public static String validarSaldo = "//*[contains(text(),'SALDO Cuenta')]";
-    public By pruebaNomas = By.cssSelector("cta007064566169");
+
 
     public static void setValidarLogin() throws InterruptedException {
         WebElement iframeElement = Utilities.driver.findElement(By.id("1"));
