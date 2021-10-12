@@ -1,10 +1,12 @@
 package page;
 import org.junit.Assert;
 import utilities.*;
+
 import definitions.*;
 
 
 public class HomePage {
+
 
     public static String btnIngresarHome = "//*[@id='btnIngresar']";
     //public static String tituloLogin = "//h6[contains(text(),'Ingresa a tu banco')]";
@@ -24,14 +26,14 @@ public class HomePage {
         Thread.sleep(2000);
 
     }
-    public static void setInputRut() throws InterruptedException
+    public static void setInputRut(String valorActual) throws InterruptedException
     {
-        Utilities.esperarElementoWebBci(inputRut).sendKeys("165442237");
+        Utilities.esperarElementoWebBci(inputRut).sendKeys(valorActual);
         Thread.sleep(2000);
     }
-    public static void setInputClave() throws InterruptedException
+    public static void setInputClave(String valorActual) throws InterruptedException
     {
-        Utilities.esperarElementoWebBci(inputClave).sendKeys("1986");
+        Utilities.esperarElementoWebBci(inputClave).sendKeys(valorActual);
         Thread.sleep(2000);
     }
     public static void setSubmitIngresar() throws InterruptedException

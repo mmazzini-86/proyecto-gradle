@@ -1,5 +1,5 @@
 Feature: home banco santander
-  @Test01
+
   Scenario: Selecionar boton ingresar en el home
     Given el usuario se encuentra en el home
     When presiona el boton ingresar
@@ -29,7 +29,7 @@ Feature: home banco santander
     And ingresa su clave
     And presiona el boton ingresar en el login
     Then se debe ingresar al sitio privado del banco santander
-
+  @Test01
   Scenario: realizar consulta de saldo a cuenta diez por ciento
     Given el usuario se encuentra en el home para realizar una consulta de saldo
     When presiona el boton igresar del home para realizar una consulta de saldo

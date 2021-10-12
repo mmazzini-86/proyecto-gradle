@@ -14,7 +14,7 @@ public class PrivatePage {
     public static String seleccionarCuenta = "//*[@id='CU1']";
     public static String seleccionarCv = "//*[@id='CV2']/a";
     public static String seleccionarSaldo = "//*[@id='SV3']/a";
-    public static String cuentaPersonal = "/html/body/center/table[1]/tbody/tr/td/table/tbody/tr[3]/td/input";  //*[@id='cta007064566169']";
+    public static String cuentaPersonal = "//*[@id='cta007064566169']";
     public static String btnAceptar = "/html/body/center/table[1]/tbody/tr/td/table/tbody/tr[3]/td/input";
     public static String validarSaldo = "//*[contains(text(),'SALDO Cuenta')]";
 
@@ -50,20 +50,23 @@ public class PrivatePage {
         allElement.get(count -1).click();
 
         */
-        //WebElement frameElement1 = Utilities.driver.findElement(By.id("1"));
-        //Utilities.driver.switchTo().frame(frameElement1);
+
+        System.out.println("parte 1");
         WebElement frameElement2 = Utilities.driver.findElement(By.id("p4"));
         Utilities.driver.switchTo().frame(frameElement2);
+        Thread.sleep(2000);
+        System.out.println("parte 2");
 
-        Utilities.driver.findElement(By.cssSelector("#cta007064566169")).click();
         //Utilities.esperarElementoWebBci(cuentaPersonal).click();
-/*
+        //Utilities.esperarElementoWebBci(cuentaPersonal).click();
+
         JavascriptExecutor js = (JavascriptExecutor) Utilities.driver;
         Thread.sleep(2000);
-        WebElement radioButton = Utilities.driver.findElement(By.xpath(pruebaNomas));
+        WebElement radioButton = Utilities.driver.findElement(By.xpath(cuentaPersonal));
         js.executeScript("arguments[2].click()", radioButton);
         Thread.sleep(2000);
-*/
+        //arguments[0].
+
 
 
 
