@@ -4,6 +4,8 @@ import utilities.*;
 
 import definitions.*;
 
+import java.sql.SQLException;
+
 
 public class HomePage {
 
@@ -26,13 +28,11 @@ public class HomePage {
         Thread.sleep(2000);
 
     }
-    public static void setInputRut(String valorActual) throws InterruptedException
-    {
+    public static void setInputRut(String valorActual) throws InterruptedException, SQLException {
         Utilities.esperarElementoWebBci(inputRut).sendKeys(valorActual);
         Thread.sleep(2000);
     }
-    public static void setInputClave(String valorActual) throws InterruptedException
-    {
+    public static void setInputClave(String valorActual) throws InterruptedException, SQLException {
         Utilities.esperarElementoWebBci(inputClave).sendKeys(valorActual);
         Thread.sleep(2000);
     }

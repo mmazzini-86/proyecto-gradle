@@ -14,7 +14,7 @@ public class PrivatePage {
     public static String seleccionarCuenta = "//*[@id='CU1']";
     public static String seleccionarCv = "//*[@id='CV2']/a";
     public static String seleccionarSaldo = "//*[@id='SV3']/a";
-    public static String cuentaPersonal = "//*[@id='cta007064566169']";
+    public static String cuentaPersonal = "//input[@name='cta']";
     public static String btnAceptar = "/html/body/center/table[1]/tbody/tr/td/table/tbody/tr[3]/td/input";
     public static String validarSaldo = "//*[contains(text(),'SALDO Cuenta')]";
 
@@ -41,35 +41,12 @@ public class PrivatePage {
         Utilities.esperarElementoWebBci(seleccionarSaldo).click();
     }
     public static void setSeleccionarCuentaPersonal() throws InterruptedException {
-       /*
+
         WebElement iframeElement1 = Utilities.driver.findElement(By.id("p4"));
         Utilities.driver.switchTo().frame(iframeElement1);
-        Thread.sleep(2000);
-        List<WebElement> allElement = Utilities.driver.findElements(By.xpath("/html/body/center/table[1]/tbody"));
-        int count=allElement.size();
-        allElement.get(count -1).click();
-
-        */
-
-        System.out.println("parte 1");
-        WebElement frameElement2 = Utilities.driver.findElement(By.id("p4"));
-        Utilities.driver.switchTo().frame(frameElement2);
-        Thread.sleep(2000);
-        System.out.println("parte 2");
-
-        //Utilities.esperarElementoWebBci(cuentaPersonal).click();
-        //Utilities.esperarElementoWebBci(cuentaPersonal).click();
-
-        JavascriptExecutor js = (JavascriptExecutor) Utilities.driver;
-        Thread.sleep(2000);
-        WebElement radioButton = Utilities.driver.findElement(By.xpath(cuentaPersonal));
-        js.executeScript("arguments[2].click()", radioButton);
-        Thread.sleep(2000);
-        //arguments[0].
-
-
-
-
+        System.out.println("paso el iframe");
+        Thread.sleep(1000);
+        Utilities.esperarElementosWebListBci(cuentaPersonal).get(1).click();
     }
     public static void setSeleccionarAceptar() throws InterruptedException {
         Utilities.esperarElementoWebBci(btnAceptar).click();

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.util.List;
 
 
 public class Utilities {
@@ -23,6 +24,12 @@ public class Utilities {
     {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(path)));
+    }
+    public static List<WebElement> esperarElementosWebListBci (String path)
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(path)));
+        return driver.findElements(By.xpath(path));
     }
     public static void screenShotForAllScenario() throws Exception
     {

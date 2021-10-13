@@ -1,9 +1,13 @@
 package definitions;
-import datos.Datos;
+//import datos.Datos;
 import io.cucumber.core.internal.gherkin.StringUtils;
 import model.Persona;
 import page.*;
 import cucumber.api.java.en.*;
+import utilities.ConnectionDb;
+import utilities.*;
+
+import java.sql.SQLException;
 
 
 public class Steps {
@@ -53,7 +57,7 @@ public class Steps {
         @When("^ingresa un rut invalido$")
         public void ingresa_un_rut_invalido () throws InterruptedException {
             HomePage.setIgresarRutInvalido();
-            HomePage.setInputClave(Datos.setRutCliente());
+            //HomePage.setInputClave(Datos.setRutCliente());
         }
 
         @Then("^se debe visualizar mensaje de alerta de rut no valido$")
@@ -75,7 +79,7 @@ public class Steps {
         public void ingresa_una_clave_invalida () throws InterruptedException {
             HomePage.setIngresarClaveInvalida();
             Thread.sleep(2000);
-            HomePage.setInputRut(Datos.setRutCliente());
+            //HomePage.setInputRut(Datos.setRutCliente());
         }
 
         @Then("^se debe visualizar mensaje de alerta de clave no valida$")
@@ -94,13 +98,17 @@ public class Steps {
         }
 
         @When("^ingresa su rut$")
-        public void ingresa_su_rut () throws InterruptedException {
-            HomePage.setInputRut(Datos.setRutCliente());
+        public void ingresa_su_rut () throws InterruptedException, SQLException {
+            Datos.buscarClientes();
+            Thread.sleep(500);
+            HomePage.setInputRut(Datos.rut);
         }
 
         @When("^ingresa su clave$")
-        public void ingresa_su_clave () throws InterruptedException {
-            HomePage.setInputClave(Datos.setClaveCliente());
+        public void ingresa_su_clave () throws InterruptedException, SQLException {
+            Datos.buscarClientes();
+            Thread.sleep(500);
+            HomePage.setInputClave(Datos.clave);
         }
 
         @When("^presiona el boton ingresar en el login$")
@@ -125,13 +133,17 @@ public class Steps {
         }
 
         @When("^ingresa su rut para realizar una consulta de saldo$")
-        public void ingresa_su_rut_para_realizar_una_consulta_de_saldo () throws InterruptedException {
-            HomePage.setInputRut(Datos.setRutCliente());
+        public void ingresa_su_rut_para_realizar_una_consulta_de_saldo () throws InterruptedException, SQLException {
+            Datos.buscarClientes();
+            Thread.sleep(500);
+            HomePage.setInputRut(Datos.rut);
         }
 
         @When("^ingresa su clave para realizar una consulta de saldo$")
-        public void ingresa_su_clave_para_realizar_una_consulta_de_saldo () throws InterruptedException {
-            HomePage.setInputClave(Datos.setClaveCliente());
+        public void ingresa_su_clave_para_realizar_una_consulta_de_saldo () throws InterruptedException, SQLException {
+            Datos.buscarClientes();
+            Thread.sleep(500);
+            HomePage.setInputClave(Datos.clave);
         }
 
         @When("^presiona el boton ingresar en el login para realizar una consulta de saldo$")
