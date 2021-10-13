@@ -1,3 +1,4 @@
+
 Feature: home banco santander
 
   Scenario: Selecionar boton ingresar en el home
@@ -21,7 +22,7 @@ Feature: home banco santander
     When  presiona el boton ingresar para validar alerta de clave invalida
     And ingresa una clave invalida
     Then se debe visualizar mensaje de alerta de clave no valida
-
+  @Test01
   Scenario: Realizar login
     Given el usuario se encuentra en el home para realizar login
     When presiona el boton igresar del home para realizar login
@@ -29,7 +30,7 @@ Feature: home banco santander
     And ingresa su clave
     And presiona el boton ingresar en el login
     Then se debe ingresar al sitio privado del banco santander
-  @Test01
+
   Scenario: realizar consulta de saldo a cuenta diez por ciento
     Given el usuario se encuentra en el home para realizar una consulta de saldo
     When presiona el boton igresar del home para realizar una consulta de saldo

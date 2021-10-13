@@ -1,10 +1,6 @@
 package definitions;
-//import datos.Datos;
-import io.cucumber.core.internal.gherkin.StringUtils;
-import model.Persona;
 import page.*;
 import cucumber.api.java.en.*;
-import utilities.ConnectionDb;
 import utilities.*;
 
 import java.sql.SQLException;
