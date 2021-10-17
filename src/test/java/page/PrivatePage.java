@@ -14,7 +14,7 @@ public class PrivatePage {
     public static String seleccionarCuenta = "//*[@id='CU1']";
     public static String seleccionarCv = "//*[@id='CV2']/a";
     public static String seleccionarSaldo = "//*[@id='SV3']/a";
-    public static String cuentaPersonal = "//input[@name='cta']";
+    public static String cuentaPersonal = "//*[contains(text(),'Cuenta Vista 10% 0-070-64-56616-9')]";
     public static String btnAceptar = "/html/body/center/table[1]/tbody/tr/td/table/tbody/tr[3]/td/input";
     public static String validarSaldo = "//*[contains(text(),'SALDO Cuenta')]";
 
@@ -46,7 +46,8 @@ public class PrivatePage {
         Utilities.driver.switchTo().frame(iframeElement1);
         System.out.println("paso el iframe");
         Thread.sleep(1000);
-        Utilities.esperarElementosWebListBci(cuentaPersonal).get(1).click();
+        //Utilities.esperarElementosWebListBci(cuentaPersonal).get(1).click();
+        Utilities.esperarElementoWebBci(cuentaPersonal).click();
     }
     public static void setSeleccionarAceptar() throws InterruptedException {
         Utilities.esperarElementoWebBci(btnAceptar).click();

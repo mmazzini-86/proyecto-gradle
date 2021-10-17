@@ -2,7 +2,6 @@ package definitions;
 import page.*;
 import cucumber.api.java.en.*;
 import utilities.*;
-
 import java.sql.SQLException;
 
 
@@ -53,7 +52,6 @@ public class Steps {
         @When("^ingresa un rut invalido$")
         public void ingresa_un_rut_invalido () throws InterruptedException {
             HomePage.setIgresarRutInvalido();
-            //HomePage.setInputClave(Datos.setRutCliente());
         }
 
         @Then("^se debe visualizar mensaje de alerta de rut no valido$")
@@ -161,6 +159,7 @@ public class Steps {
         @When("^selecciona saldos$")
         public void selecciona_saldos () throws InterruptedException {
             PrivatePage.setSeleccionarSaldo();
+            Thread.sleep(3000);
         }
 
         @When("^selecciona cuenta vista diez por ciento$")
@@ -179,8 +178,6 @@ public class Steps {
         public void se_debe_visualizar_el_saldo_de_cuenta_diez_por_ciento () throws InterruptedException {
             PrivatePage.setValidarSaldo();
         }
-
-
 
 
 }

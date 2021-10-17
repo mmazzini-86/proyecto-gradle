@@ -9,7 +9,7 @@ import utilities.*;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        strict=true,
+        //strict=true,
         features = "src/test/java/features/",
         glue = "definitions/",
         tags = {"@Test01"}
